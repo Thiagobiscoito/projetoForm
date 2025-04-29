@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CADASTRO</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cabecalho">
+        <img class="user" src="/img/usuario.png" alt="Usuário" />
+        <h1>Cadastro de Usuário</h1>
+      </div>
+
+      <p id="mensagens" class="mensagens"></p>
+      <form class="formData" id="formData">
+        <div class="campos">
+          <label for="Nome"
+            >*Nome:
+            <span class="campoObrigatorio" id="campoObrigatorio"
+              >(Campo obrigatorio)</span
+            ></label
+          >
+
+          <input type="text" id="nome" placeholder="Digite seu nome" />
+        </div>
+
+        <div class="campos">
+          <label for="E-mail">Email:</label>
+          <input
+            type="text"
+            name="Email"
+            id="email"
+            placeholder="Digite seu E-mail"
+          />
+        </div>
+        <button>
+          <img src="/img/criar.png" alt="Criar" />
+        </button>
+      </form>
+
+      <table class="tabelaUsuarios">
+        <tr>
+          <th>Nome</th>
+          <th>E-mail</th>
+          <th>Opções</th>
+        </tr>
+
+        <!-- <tr>
+          <td>Thiago</td>
+          <td>thiago@hotmail.com</td>
+          <td>
+            <button class="btnLinha">
+              <img src="/img/editar.png" alt="editar" />
+            </button>
+            <button class="btnLinha">
+              <img src="/img/excluir.png" alt="excluir" />
+            </button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Thiago</td>
+          <td>thiago@hotmail.com</td>
+          <td>
+            <button>
+              <img src="/img/editar.png" alt="editar" />
+            </button>
+            <button>
+              <img src="/img/excluir.png" alt="excluir" />
+            </button>
+          </td>
+        </tr> -->
+      </table>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/zod@3.22.2/lib/index.umd.min.js"></script>
+  </body>
+</html>

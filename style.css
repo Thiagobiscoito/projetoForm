@@ -73,35 +73,39 @@ img {
 }
 
 .campoObrigatorio,
-.mensagens {
+.mensagensDeErro {
   color: red;
   display: none;
 }
 
 .tabelaUsuarios {
   width: 100%;
-  margin-top: 40px;
+  margin-top: 50px;
   border-collapse: collapse;
-}
-
-.tabelaUsuarios th {
-  text-align: left;
 }
 
 .tabelaUsuarios tr {
   border-top: #246dd4 1px solid;
-  height: 50px;
+  height: 60px;
 }
 
 .tabelaUsuarios tr:nth-child(2n) {
   background-color: #f0efef;
 }
 
-.tabelaUsuarios .btnLinha {
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  padding: 10px 25px;
-  height: 55px;
+.tabelaUsuarios th {
+  text-align: left;
+  font-weight: bold;
+}
+
+.tabelaUsuarios button img {
   width: 30px;
+  height: 30px;
+}
+
+.tabelaUsuarios button {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  margin-left: 20px;
 }
